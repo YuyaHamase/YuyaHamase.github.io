@@ -1,0 +1,230 @@
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 30%;
+    height: 30%;
+}
+
+.middle-left{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin: 0;
+    width: 30%;
+    height: 35%;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 30%;
+    height: 35%;
+}
+
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 30%;
+    height: 35%;
+}
+
+.middle-right{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    margin: 0;
+    width: 30%;
+    height: 30%;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 30%;
+    height: 35%;
+}
+
+.create_account_btn {
+        background: silver;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        width: 5%; 
+        height: 5%;
+        top: 3%;
+        left: 43%;
+        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    /* Change background on hover or active */
+    .create_account_btn:hover {
+        background-color: greenyellow;
+    }
+
+.login_btn {
+        background: silver;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        width: 5%; 
+        height: 5%;
+        top: 3%;
+        left: 52%;
+        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    /* Change background on hover or active */
+    .login_btn:hover {
+        background-color: greenyellow;
+    }
+
+.open_btn {       
+        background: gold;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        width: 30%; 
+        height: 10%;
+        top: 70%;
+        left: 35%;
+        font-size: 20px;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    /* Change background on hover or active */
+    .open_btn:hover {
+        background-color: #0056b3;
+    }
+
+    .recipes-section {
+        background: silver;
+        width: 30%;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+        /* Modal background */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modalCreate {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modalLogin {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+        /* Modal content box */
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        position: relative;
+    }
+
+        /* Close button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+    }
+    .close:hover {
+        color: red;
+    }
+
+        /* Form styles */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    input, textarea {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .submit-btn {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .submit-btn:hover {
+        background-color: #218838;
+    }
+
+    .recipe {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+    .recipe:last-child {
+        border-bottom: none;
+    }
+    .recipe h3 {
+        margin: 0;
+        color: red;
+    }

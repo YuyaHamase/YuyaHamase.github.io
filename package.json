@@ -1,0 +1,27 @@
+{
+  "name": "yuyahamase.github.io",
+  "version": "1.0.0",
+  "description": "Recipe Sharing Platform",
+  "main": "recipe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyaHamase/YuyaHamase.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YuyaHamase/YuyaHamase.github.io/issues"
+  },
+  "homepage": "https://github.com/YuyaHamase/YuyaHamase.github.io#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
