@@ -21,12 +21,18 @@ Search by category--
 
 Create account--
   Users can create account by pressing Create Account button on the top.
-  Clicking on the button pops up a submission form where user fills username and password.
+  Clicking on the button makes a submission form where user fills username and password pops up.
   Username already stored at server.js can not be used for a new account.
 
 Login/Log out--
   Users can login/log out by pressing Login/Log out button beside create account button.
+  Same as creating account, clicking on login button makes submission form  pops up.
+  If either username or password is incorrect compared to stored data, error message pops up.
 
 Adding a recipe--
   *This functionality is restricted to only users who have account.
+  Users can add a recipe by pressing Add a recipe button on the center.
+  Clicking on the button triggers a large submission form pop up where users has to fill out
+  title, category, ingredients, instruction, and image URL.
+  If either of them is missing, error message pops up.
   
