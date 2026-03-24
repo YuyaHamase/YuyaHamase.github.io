@@ -17,7 +17,7 @@ Search by ingredient--
   All they have to do is just entering an ingredient in second input.
 
 Search by category--
-  Users can categorize recipes by selecting one out of 6 categories; Japanese, Chinese, Western, Soup, Dessert, and Others.
+  Users can look for recipes by selecting one out of 6 categories; Japanese, Chinese, Western, Soup, Dessert, and Others.
 
 Create account--
   Users can create account by pressing Create Account button on the top.
