@@ -20,7 +20,7 @@ Search by category--
   Users can look for recipes by selecting one out of 6 categories; Japanese, Chinese, Western, Soup, Dessert, and Others.
 
 Create account--
-  Users can create account by pressing Create Account button on the top.
+  Users can create account by pressing Create Account button on the top after using the command Node server.js.
   Clicking on the button makes a submission form where user fills username and password pops up.
   Username already stored at server.js can not be used for a new account.
 
