@@ -2,8 +2,10 @@
 Recipe Sharing Platform--
   This is the website where users can look over and add recipes.
 
+Features
+
 Display recipes--
-  Added recipes are displayed in the order thet were added.
+  Added recipes are displayed in the order that were added.
   
 Delete a recipe--
   Users could delete a recipe by pressing delete button below picture of recipe.
@@ -30,7 +32,7 @@ Login/Log out--
   If either username or password is incorrect compared to stored data, error message pops up.
 
 Adding a recipe--
-  *This functionality is restricted to only users who have account.
+  *This functionality is restricted to only users who have account and logged in.
   Users can add a recipe by pressing Add a recipe button on the center.
   Clicking on the button triggers a large submission form pop up where users has to fill out
   title, category, ingredients, instruction, and image URL.
