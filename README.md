@@ -35,6 +35,11 @@ Adding a recipe--
   *This functionality is restricted to only users who have account and logged in.
   Users can add a recipe by pressing Add a recipe button on the center.
   Clicking on the button triggers a large submission form pop up where users has to fill out
-  title, category, ingredients, instruction, and image URL.
+  title, category, ingredients, instruction, and image URL or upload image.
   If either of them is missing, error message pops up.
+
+Ratng system--
+   *This functionality is restricted to only users who have account and logged in.
+   Refresh the page once logged in, and users could choose from 1 to 5 to rate each resipe.
+   For default, it always shows the average of user rates.
   
