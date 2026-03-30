@@ -228,3 +228,84 @@
         margin: 0;
         color: red;
     }
+
+.generate_btn {
+    background: #ff6b6b; /* A nice coral color to stand out */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%; /* Makes it look nice and centered */
+}
+
+.generate_btn:hover {
+    background-color: plum;
+}
+
+#unique-ingredients-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    list-style: none;
+}
+
+#checklist-container label {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#checklist-container div {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.rating-container {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.rate-actions select {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.rate-actions button {
+    background-color: #ffc107;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.rate-actions button:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recipe-img {
+    
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
