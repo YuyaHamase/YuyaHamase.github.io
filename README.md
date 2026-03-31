@@ -43,3 +43,8 @@ Ratng system--
    Refresh the page once logged in, and users could choose from 1 to 5 to rate each resipe.
    For default, it always shows the average of user rates.
   
+Shopping list generator--
+  The button named "Generate Shopping List" is placed at the bottom of the page.
+  Once user clicks on that, submission form pops up.
+  Inside the form, user is supposed to select one or more recipes which user is interested in making.
+  Clicking green button reveals a result where all ingredients used in chosen recipes(deduplicated).
