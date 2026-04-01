@@ -48,3 +48,9 @@ Shopping list generator--
   Once user clicks on that, submission form pops up.
   Inside the form, user is supposed to select one or more recipes which user is interested in making.
   Clicking green button reveals a result where all ingredients used in chosen recipes(deduplicated).
+
+Nutrition calculator--
+  The button named "Calculate Nutrition" is placed at the bottom of the page.
+  Once user clicks on that, submission form pops up.
+  Inside the form, user is supposed to select one or more recipes which user would like to see its nutrition.
+  Clicking green button reveals roughly calculated result.
