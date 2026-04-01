@@ -54,3 +54,4 @@ Nutrition calculator--
   Once user clicks on that, submission form pops up.
   Inside the form, user is supposed to select one or more recipes which user would like to see its nutrition.
   Clicking green button reveals roughly calculated result.
+  In order to get more accurate result, I need to use AI within the project.
