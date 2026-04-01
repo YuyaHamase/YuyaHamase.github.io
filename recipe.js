@@ -420,3 +420,78 @@ selectionForm.addEventListener("submit", (e) => {
 // Standard close logic for the new modals
 document.getElementById("closeSelectionBtn").onclick = () => selectionModal.style.display = "none";
 document.getElementById("closeIngredientsBtn").onclick = () => ingredientsModal.style.display = "none";
+
+// --- Logic for Selective Nutrition Calculation ---
+const nutritionSelectModal = document.getElementById("nutritionSelectionModal");
+const nutritionResultsModal = document.getElementById("nutritionResultsModal");
+const openNutritionBtn = document.getElementById("openNutritionSelectionBtn");
+const nutritionForm = document.getElementById("nutritionSelectionForm");
+const nutritionChecklist = document.getElementById("nutrition-checklist-container");
+const nutritionDisplay = document.getElementById("nutrition-results-display");
+
+// 1. Open selection modal and build checkboxes
+openNutritionBtn.addEventListener("click", () => {
+    nutritionChecklist.innerHTML = ''; 
+    if (recipes.length === 0) {
+        alert("No recipes available!");
+        return;
+    }
+
+    recipes.forEach((recipe, index) => {
+        const div = document.createElement("div");
+        div.style.padding = "5px 0";
+        div.style.borderBottom = "1px solid #eee";
+        div.innerHTML = `
+            <input type="checkbox" id="nutr-${index}" name="nutrIndex" value="${index}">
+            <label for="nutr-${index}" style="font-weight: normal; margin-left: 8px;">${recipe.title}</label>
+        `;
+        nutritionChecklist.appendChild(div);
+    });
+    nutritionSelectModal.style.display = "block";
+});
+
+// 2. Handle calculation of selected items
+nutritionForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const selectedBoxes = document.querySelectorAll('input[name="nutrIndex"]:checked');
+    
+    if (selectedBoxes.length === 0) {
+        alert("Please select at least one recipe!");
+        return;
+    }
+
+    let totalCals = 0;
+    let totalProtein = 0;
+    let totalCarbs = 0;
+
+    selectedBoxes.forEach(box => {
+        const index = box.value;
+        const recipe = recipes[index];
+        // Split by comma to count ingredients
+        const ingredientCount = recipe.ingredients.split(',').filter(item => item.trim() !== "").length;
+
+        // Mock calculation logic per ingredient
+        totalCals += ingredientCount * 120; 
+        totalProtein += ingredientCount * 4;
+        totalCarbs += ingredientCount * 10;
+    });
+
+    // 3. Display the results
+    nutritionDisplay.innerHTML = `
+        <p><strong>Recipes Selected:</strong> ${selectedBoxes.length}</p>
+        <hr>
+        <p>🔥 <strong>Total Calories:</strong> ${totalCals} kcal</p>
+        <p>💪 <strong>Total Protein:</strong> ${totalProtein}g</p>
+        <p>🍞 <strong>Total Carbs:</strong> ${totalCarbs}g</p>
+        <p style="font-size: 0.8em; color: gray; margin-top: 15px;">
+            *Estimates based on average ingredient density.
+        </p>
+    `;
+
+    nutritionSelectModal.style.display = "none";
+    nutritionResultsModal.style.display = "block";
+});
+
+// Close buttons logic
+document.getElementById("closeNutritionSelectionBtn").onclick = () => nutritionSelectModal.style.display = "none";
+document.getElementById("closeNutritionResultsBtn").onclick = () => nutritionResultsModal.style.display = "none";

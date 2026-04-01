@@ -121,13 +121,17 @@
 
 <section class="recipes-section" style="position: absolute; top: 85%; left: 35%;">
     <h2 style="text-align: center;">Recipes</h2>
-    <div id="recipe-list">
+        <div id="recipe-list">
         <!-- Recipes will be dynamically added here -->
         </div>
     
     <div style="text-align: center; padding: 20px 0;">
         <button id="openSelectionBtn" class="generate_btn">🛒 Generate Shopping List</button>
     </div>
+
+    <div style="text-align: center; padding: 10px 0;">
+    <button id="openNutritionSelectionBtn" class="generate_btn">🥗 Calculate Nutrition</button>
+</div>
 </section>
 
 <div id="selectionModal" class="modal">
@@ -146,6 +150,25 @@
         <span class="close" id="closeIngredientsBtn">&times;</span>
         <h2>Your Shopping List</h2>
         <ul id="unique-ingredients-list" style="text-align: left;"></ul>
+    </div>
+</div>
+
+<div id="nutritionSelectionModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeNutritionSelectionBtn">&times;</span>
+        <h2>Select Recipes for Nutrition</h2>
+        <form id="nutritionSelectionForm">
+            <div id="nutrition-checklist-container" style="max-height: 300px; overflow-y: auto; margin-bottom: 15px;"></div>
+            <button type="submit" class="submit-btn">Calculate Selected</button>
+        </form>
+    </div>
+</div>
+
+<div id="nutritionResultsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeNutritionResultsBtn">&times;</span>
+        <h2>Nutritional Summary</h2>
+        <div id="nutrition-results-display" style="text-align: left; line-height: 1.8;"></div>
     </div>
 </div>
 
