@@ -2,6 +2,8 @@
 Recipe Sharing Platform--
   This is the website where users can look over and add recipes.
 
+  You can open the website by clicking on "Open In Default Browser" after right-click on recipe.html.
+
 Features
 
 Display recipes--
